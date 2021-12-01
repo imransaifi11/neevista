@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+/***** General CSS *****/
+
+*{outline: none!important}
+
+body {  word-break: break-word;  font-family: 'Poppins', sans-serif; color: #000; overflow-x: hidden;}
+a {text-decoration: none; color: #000; white-space: initial; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease;}
+a:hover, a:focus { text-decoration: none;  color: #393939;}
+a:hover { transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease;}
+img {max-width: 100%;}
+ul { list-style:none; margin:0; padding:0; }
+
+
+.header { height:80px; padding:0px;  position:relative; top:0; left:0; width:100%; z-index:9; transition:ease all 0.3s; }
+.header .logo { float:left; width:120px; padding:8px 00px 0px 0px; transition:ease all 0.3s;  } 
+.header .logo img { width:100%; }
+
+.header.sticky { background:#fff; box-shadow:0 0 10px #dadada; }
+.header.sticky .logo { float:left; width:73px; }
+.header.sticky.white-heder {  }
+.header.sticky.white-heder .menu-sidebar i { color:#000;  }
+.header  .logo-w { display:none; }
+.header.white-heder .logo-m { display:none;  }
+.header.white-heder .logo-w { display:block;  }
+.header.sticky.white-heder .logo-m { display:block; }
+.header.sticky.white-heder .logo-w { display:none; }
+
+.header-inner  .logo { float:left; width:73px; }
+
+.slider-main { padding:0px 0 0 0; position:relative; }
+.slider-main .slider-img { width:100%;  }
+.slider-main .headeings { position:absolute; top:300px; left:0; width:100%; z-index:1; text-align:left; }
+.slider-main .headeings small  { font-size:30px; line-height:50px; color:#1C2357;  margin:0 0 10px 0; }
+.slider-main .headeings h2 { font-size:44px; color:#1C2357; position:relative; font-weight:bold;  margin:0 0 30px 0;  }
+.slider-main .headeings p  { font-size:16px; line-height:24px; color:#1C2357;  margin:0 0 30px 0;   }
+
+.slider-main .headeings .forms { margin:30px 0;  }
+.slider-main .headeings .forms input { width:300px; line-height:40px; height:40px; border-radius:30px; background:none; border:1px solid #1C2357; padding:0 20px; margin:0 20px 0 0; }
+
+
+.button2 {  line-height:40px; height:40px; border-radius:30px; background:#1C2357; border:1px solid #1C2357; padding:0 30px; color:#fff; transition:ease all 0.3s; }
+.button2:hover { background:none; color:#1C2357; }
+
+.button3 {  line-height:40px; height:40px; border-radius:30px; background:none; border:1px solid #fff; padding:0 30px; color:#fff; transition:ease all 0.3s; }
+.button3:hover { background:#fff; color:#1C2357; }
+
+.button4 {  line-height:40px; height:40px; border-radius:30px; background:#fff; border:1px solid #fff; padding:0 30px; color:#222; transition:ease all 0.3s; }
+.button4:hover { background:none; color:#fff; }
+
+.button5 {  line-height:50px; height:50px; border-radius:30px; background:#00C2CB; border:1px solid #00C2CB; padding:0 30px; color:#fff; transition:ease all 0.3s; }
+.button5:hover { background:none; color:#fff; }
+
+
+.read-more { font-size:18px; padding:0 40px 0 0px; line-height:30px; position:relative; display:block; margin:10px 0 0 0; text-decoration:none; display:inline-block;  }
+.read-more span { content:""; width:30px; height:30px; position:absolute;  right:0; top:4px; text-align:center; line-height:30px;  }
+.read-more span img { width:16px; display:block; margin:6px auto 0;  line-height:77px;}
+
+
+
+.bottomimg-main { padding:50px 0 0 0; position:relative; }
+.bottomimg-main .slider-img { width:100%;  }
+.bottomimg-main .headeings { position:absolute; top:220px; left:0; width:100%; z-index:1; text-align:left; }
+.bottomimg-main .headeings small  { font-size:30px; line-height:50px; color:#fff;  margin:0 0 30px 0; }
+.bottomimg-main .headeings h2 { font-size:40px; color:#fff; position:relative; font-weight:bold;  margin:0 0 30px 0;  }
+.bottomimg-main .headeings p  { font-size:16px; line-height:24px; color:#fff;  margin:0 0 30px 0;   }
+.bottomimg-main .headeings img { margin:0 20px 0 0; }
+.bottomimg-main .headeings button { margin:30px 10px 0 0; }
+
+.middlesec {}
+.middlesec .headings { text-align:center;}
+.middlesec .headings h2 { font-size:32px; color:#000; position:relative; font-weight:bold;  margin:0 0 30px 0; }
+.middlesec .headings strong { color:#6173FB; }
+.middlesec .headings small { color:#6173FB; font-size:22px; width:60%; margin:0px auto 15px; display:block;  }
+.middlesec .headings  p{ color:#000; font-size:16px; width:60%; margin:0px auto 20px; }
+
+
+
+.seo-detail-main { text-align:center; padding:0 0 50px 0; }
+.seo-detail { width:18%; display:inline-table; padding:20px; border:1px solid #cacaca; border-radius:20px; margin:8px; transition:ease all 0.3s; position:relative; }
+.seodetail-in { position:relative; }
+.seodetail-in .image { background:#6173FB; width:80px; height:80px; display:block; margin:10px auto 20px; line-height:80px; text-align:center; border-radius:50px; transition:ease all 0.3s;}
+.seodetail-in .image img { width:40px; transition:ease all 0.3s;}
+.seodetail-in .contant  { min-height:200px; transition:ease all 0.3s; }
+.seodetail-in .contant h4  { color:#000; font-size:20px; line-height:30px; min-height:50px;transition:ease all 0.3s; }
+.seodetail-in .contant p { color:#000; font-size:14px; line-height:30px; transition:ease all 0.3s; }
+
+.seo-detail:hover ,.seo-detail.active {  background:#6173FB; }
+.seo-detail:hover .contant ,.seo-detail.active  .contant{ min-height:230px; }
+.seo-detail:hover .contant  h4 ,.seo-detail.active  .contant  h4 { color:#fff; }
+.seo-detail:hover .contant  p, .seo-detail.active  .contant  p  { color:#fff; padding:30px 0 0 0; }
+
+.seo-detail:hover .image  ,.seo-detail.active  .image {  background:#1C2357; width:100px; height:100px; line-height:100px; }
+.seo-detail:hover .image img  ,.seo-detail.active  .image img{ width:50px; }
+
+
+
+
+.canhelp { background:#283068; border-radius:30px 30px 0 0; padding:50px 0; margin:20px 0 0 0; }
+.canhelp h3 { font-size:32px; color:#fff; position:relative; font-weight:bold;  margin:0 0 30px 0 ; text-align:center; }
+.paidform { display:inline-block; width:100%; padding:10px; }
+.paidform input[type="checkbox"] { float:left; }
+.paidform input { float:right;  width:300px; line-height:40px; height:40px; border-radius:30px; background:none; border:1px solid #fff; padding:0 20px; margin:0 0px 0 0; color:#fff; }
+
+.paidform button { display:block; margin:0px auto; width:200px;  } 
+.checkmain { display: block; position: relative; float:left; padding-left: 35px; margin-bottom: 12px; cursor: pointer; color:#fff; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+.checkmain input {  position: absolute;  opacity: 0;  cursor: pointer;  height: 0;  width: 0;}
+.checkmark {  position: absolute;  top: 0;  left: 0;  height: 25px;  width: 25px;  background-color: #eee;}
+.checkmain:hover .checkmain input ~ .checkmark {  background-color: #ccc;}
+.checkmain input:checked ~  .checkmark { background-color: #2196F3;}
+.checkmain:after { content: ""; position: absolute; display: none;}
+.checkmain input:checked ~  .checkmark:after {  display: block;}
+.checkmain .checkmark:after { left: 9px; top: 5px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
+.footer { background:#000; padding:25px 0; color:#fff; font-size:14px; text-align:center; }
+
+.priingmain-in { border:1px solid #cacaca; }
+.priingmain { display:flex; border-bottom:1px solid #dadada;  }
+.priingmain:last-child { border-bottom:0; }
+.pricing-sec { width:24%; margin:0 0 0 1%; float:left;   }
+.priingmain .pricing-2 { background:#F1F2FF; }
+.priingmain .pricing-3 {  background:#f9f9f9; }
+.priingmain .pricing-4 { background:#F1F2FF; }
+
+.pricing-sec1 { width:25%; padding:20px;  }
+.pricing-sec1 strong { display:block; margin:0 0 10px 0; }
+.pricing-sec1 p { display:block; margin:0 0 0px 0; font-size:12px; }
+
+.pricing-1 ul { list-style:disc; padding:0 0 0 16px; }
+.pricing-1 ul li { font-size:12px; padding:0 0 5px 0; }
+
+.pricing-sec { text-align:center; padding:20px; }
+.pricing-sec h3 { font-size:42px; margin:0 0 20px 0; }
+.pricing-sec strong { display:block; margin:0 0 10px 0; }
+.pricing-sec button { margin:0 auto 10px; }
+
+.pricing-sec .fa-check { background:#6173FB; width:30px; height:30px; line-height:30px; border-radius:25px; color:#fff; font-size:16px; display:block; margin:0px auto; }
+.pricing-sec .fa-times {background:#CDCEEA; width:30px; height:30px; line-height:30px; border-radius:25px; color:#fff; font-size:16px; display:block; margin:0px auto;}
+
+
+
+.footer-social { float:left; display:block; width:100%; padding:0px 0 0px 0; }
+.footer-social ul { list-style:none; text-align:center; }
+.footer-social li { display:block; float:left; width:inherit; }
+.footer-social li a { width:26px; height:26px; background:#000000;  color:#fff; font-size:18px; text-align:center; line-height:26px; border-radius:40px; display:block; margin:0 15px 0 0px; }
+.footer-social li a:hover { color:#7EB8C4; }
+
+
+
+@media (max-width:767px) {
+.slider-main .headeings { top:30px; }
+.slider-main .headeings  small { font-size:14px;  }
+.slider-main .headeings  h2 { font-size:18px; margin:0 0 10px 0; }
+.slider-main .headeings  p { font-size:14px; display:none; }
+.slider-main .headeings .forms { margin:10px 0;  }
+.slider-main .headeings img { display:none; }
+.slider-main .headeings .forms input { width:200px; margin:0 0px 5px 0 ; }
+ 
+.middlesec .headings h2 { font-size:22px; margin:0 0 10px 0; }
+.middlesec .headings p  { font-size:14px;width:100%; }
+.middlesec .headings small { width:100%; font-size:14px; }
+
+.seo-detail { width:78%; }
+.seodetail-in .contant { min-height:inherit; }
+.seo-detail:hover .contant, .seo-detail.active .contant { min-height:inherit; }
+.seo-detail:hover .contant p, .seo-detail.active .contant p { padding:0; }
+
+
+.bottomimg-main .headeings { top:80px; }
+.bottomimg-main .headeings  small { font-size:14px; margin:0 0 10px 0;  }
+.bottomimg-main .headeings  h2 { font-size:18px; margin:0 0 10px 0; }
+.bottomimg-main .headeings  p { font-size:14px; display:none; }
+.bottomimg-main .headeings .forms { margin:10px 0;  }
+.bottomimg-main .headeings img { display:none; }
+.bottomimg-main .headeings .forms input { width:200px; margin:0 0px 5px 0 ; }
+.bottomimg-main .headeings button { margin:0px 0 0 0; font-size:12px; padding:0px 10px; }
+
+
+}
+
+
+
+
+
+
+
+
+
