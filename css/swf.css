@@ -12,7 +12,7 @@ ul { list-style:none; margin:0; padding:0; }
 
 
 .header { height:80px; padding:0px;  position:relative; top:0; left:0; width:100%; z-index:9; transition:ease all 0.3s; }
-.header .logo { float:left; width:120px; padding:8px 00px 0px 0px; transition:ease all 0.3s;  } 
+.header .logo { float:left; width:100px; padding:8px 00px 0px 0px; transition:ease all 0.3s;  } 
 .header .logo img { width:100%; }
 
 .header.sticky { background:#fff; box-shadow:0 0 10px #dadada; }
@@ -29,7 +29,7 @@ ul { list-style:none; margin:0; padding:0; }
 
 .slider-main { padding:0px 0 0 0; position:relative; }
 .slider-main .slider-img { width:100%;  }
-.slider-main .headeings { position:absolute; top:300px; left:0; width:100%; z-index:1; text-align:left; }
+.slider-main .headeings { position:absolute; top:220px; left:0; width:100%; z-index:1; text-align:left; }
 .slider-main .headeings small  { font-size:30px; line-height:50px; color:#1C2357;  margin:0 0 10px 0; }
 .slider-main .headeings h2 { font-size:44px; color:#1C2357; position:relative; font-weight:bold;  margin:0 0 30px 0;  }
 .slider-main .headeings p  { font-size:16px; line-height:24px; color:#1C2357;  margin:0 0 30px 0;   }
@@ -99,7 +99,7 @@ ul { list-style:none; margin:0; padding:0; }
 .canhelp h3 { font-size:32px; color:#fff; position:relative; font-weight:bold;  margin:0 0 30px 0 ; text-align:center; }
 .paidform { display:inline-block; width:100%; padding:10px; }
 .paidform input[type="checkbox"] { float:left; }
-.paidform input { float:right;  width:300px; line-height:40px; height:40px; border-radius:30px; background:none; border:1px solid #fff; padding:0 20px; margin:0 0px 0 0; color:#fff; }
+.paidform input { float:right;  width:100%; line-height:40px; height:40px; border-radius:30px; background:none; border:1px solid #fff; padding:0 20px; margin:0 0px 0 0; color:#fff; }
 
 .paidform button { display:block; margin:0px auto; width:200px;  } 
 .checkmain { display: block; position: relative; float:left; padding-left: 35px; margin-bottom: 12px; cursor: pointer; color:#fff; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
@@ -146,32 +146,40 @@ ul { list-style:none; margin:0; padding:0; }
 
 
 @media (max-width:767px) {
+.header .logo { float:none; width:80px; margin:0px auto; }
+	
+.slider-main  { min-height:500px; }
+.slider-main .slider-img { opacity:0.4; }
+	
 .slider-main .headeings { top:30px; }
 .slider-main .headeings  small { font-size:14px;  }
-.slider-main .headeings  h2 { font-size:18px; margin:0 0 10px 0; }
-.slider-main .headeings  p { font-size:14px; display:none; }
-.slider-main .headeings .forms { margin:10px 0;  }
-.slider-main .headeings img { display:none; }
-.slider-main .headeings .forms input { width:200px; margin:0 0px 5px 0 ; }
+.slider-main .headeings  h2 { font-size:22px; margin:5px 0 13px 0; }
+.slider-main .headeings  p { font-size:14px;  }
+.slider-main .headeings .forms { margin:10px 0; text-align:center;  }
+.slider-main .headeings img { width:70px; }
+.slider-main .headeings .forms input { width:280px; margin:0 auto 10px ; }
  
 .middlesec .headings h2 { font-size:22px; margin:0 0 10px 0; }
 .middlesec .headings p  { font-size:14px;width:100%; }
 .middlesec .headings small { width:100%; font-size:14px; }
 
-.seo-detail { width:78%; }
+.seo-detail { width:78%; min-height:330px; }
 .seodetail-in .contant { min-height:inherit; }
 .seo-detail:hover .contant, .seo-detail.active .contant { min-height:inherit; }
 .seo-detail:hover .contant p, .seo-detail.active .contant p { padding:0; }
 
-
-.bottomimg-main .headeings { top:80px; }
+.bottomimg-main { padding:470px 0 20px 0; }
+.bottomimg-main .slider-img { position:relative; z-index:1; bottom:0px; }
+.bottomimg-main .headeings { top:00px; background:#1C2357; padding:20px 0 70px 0; z-index:0; }
 .bottomimg-main .headeings  small { font-size:14px; margin:0 0 10px 0;  }
 .bottomimg-main .headeings  h2 { font-size:18px; margin:0 0 10px 0; }
-.bottomimg-main .headeings  p { font-size:14px; display:none; }
+.bottomimg-main .headeings  p { font-size:14px; margin:0 0 15px 0;   }
 .bottomimg-main .headeings .forms { margin:10px 0;  }
-.bottomimg-main .headeings img { display:none; }
+.bottomimg-main .headeings img { width:100px; margin:0 0 20px 0; }
 .bottomimg-main .headeings .forms input { width:200px; margin:0 0px 5px 0 ; }
-.bottomimg-main .headeings button { margin:0px 0 0 0; font-size:12px; padding:0px 10px; }
+.bottomimg-main .headeings button { margin:0px auto 10px; font-size:12px; padding:0px 30px; }
+
+.priingmain-in { display:none !important; }
 
 
 }
